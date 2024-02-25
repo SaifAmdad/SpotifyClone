@@ -1,0 +1,30 @@
+<div class="audioItem">
+            <span>
+              <span class="audioTheme">theme </span>
+              <span class="audioName"> name</span>
+            </span>
+            <span>
+              <span class="duration">5:00</span>
+              <span class="playPause"> play </span>
+            </span>
+          </div>
+
+          /home/msia/Documents/Projects/audioProject/img/icons/circle-play-regular.svg
+
+          img/icons/circle-pause-regular.svg
+
+          volume
+          continueCheckBox
+
+          makeRequest("api/islamicSong.txt")
+
+          "api/quran.txt"
+
+          audioElements[audioIndex].children[0].id
+
+          audioElements[0].children[0].innerText
+
+
+              makeRequest("api/quran.txt", quranTheme);
+    viewPort.classList.remove("mainDefault");
+    viewPort.classList.add("mainForQuran");
