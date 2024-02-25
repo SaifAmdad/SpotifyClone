@@ -22,11 +22,11 @@ let audioList = document.querySelector(".audioList");
 // -------------------------------------------------------
 
 // icons here-----------
-let playIcon = `img/icons/circle-play-regular.svg`;
-let pauseIcon = `img/icons/circle-pause-regular.svg`;
-let quranTheme = `img/quran.png`;
+let playIcon = `/img/icons/circle-play-regular.svg`;
+let pauseIcon = `/img/icons/circle-pause-regular.svg`;
+let quranTheme = `/img/quran.png`;
 let islamicSongTheme = `/img/islamic.png`;
-let musicTheme = `img/music.jpg`;
+let musicTheme = `/img/music.jpg`;
 // finding HTML elements ends =========================
 
 // calling local api==================
@@ -149,6 +149,7 @@ const makeRequest = async (url, thems) => {
       mainPlayPause.innerHTML = `<img src="${pauseIcon}" alt="" />`;
       if (!audio.paused) {
         hideToggel();
+        mainPlayPause.innerHTML = `<img src="${pauseIcon}" alt="" />`;
       }
     };
 
@@ -172,19 +173,21 @@ const makeRequest = async (url, thems) => {
       let selectList = audioList.querySelectorAll(".playPause");
       if (audio.paused) {
         audio.play();
-        mainPlayPause.innerHTML = `<img src="${pauseIcon}" alt="" />`;
+        // mainPlayPause.innerHTML = `<img src="${pauseIcon}" alt="" />`;
         let playingSongName = audioFiles[audioIndex].title;
         currentSongName.innerText = `${playingSongName}`;
       } else {
         audio.pause();
-        mainPlayPause.innerHTML = `<img src="${playIcon}" alt="Play" />`;
+        // mainPlayPause.innerHTML = `<img src="${playIcon}" alt="Play" />`;
         listIconHendler(selectList);
       }
 
       if (!audio.paused) {
+        mainPlayPause.innerHTML = `<img src="${pauseIcon}" alt="" />`;
         hideToggel();
       }
       if (audio.paused) {
+        mainPlayPause.innerHTML = `<img src="${playIcon}" alt="" />`;
         showToggle();
       }
     });
@@ -195,7 +198,6 @@ const makeRequest = async (url, thems) => {
       if (audioIndex >= len) {
         audioIndex = 0;
       }
-
       playAudio();
       let selectList = audioList.querySelectorAll(".playPause");
       listIconHendler(selectList);
@@ -209,7 +211,10 @@ const makeRequest = async (url, thems) => {
       progressbar.value = (audio.currentTime / audio.duration) * 100;
       if (progressbar.value == 100) {
         if (continueCheckBox.checked) {
+          mainPlayPause.innerHTML = `<img src="${pauseIcon}" alt="" />`;
           nextPlay();
+        } else {
+          mainPlayPause.innerHTML = `<img src="${playIcon}" alt="Play" />`;
         }
         progressbar.value = 0;
       }
@@ -314,9 +319,9 @@ const createNewFooter = () => {
 
 // ===============================================
 
-setTimeout(() => {
   // code for togle starts here =====================================
 
+setTimeout(() => {
   let count = 0;
   const togleHide = () => {
     count = 0;
@@ -338,20 +343,17 @@ setTimeout(() => {
   document.querySelector("footer").addEventListener("click", () => {
     togleHide();
   });
-
-  // togle ends here ===============================
 }, 3000);
-
+  // togle ends here ===============================
 // =========================================================
-const audioPrepare = (url, them, removecls1, removecls2, addcls) => {
-  createFooter();
-  makeRequest(`${url}`, them);
-  viewPort.classList.remove(`${removecls1}`);
-  viewPort.classList.add("mainForQuran");
-};
 
 window.addEventListener("DOMContentLoaded", () => {
-  audioPrepare("/api/quran.txt", quranTheme);
+  setTimeout(() => {
+    createFooter();
+    makeRequest("/api/quran.txt", quranTheme);
+    viewPort.classList.remove("mainDefault");
+    viewPort.classList.add("mainForQuran");
+  }, 3000);
 });
 
 quran.addEventListener("click", () => {
