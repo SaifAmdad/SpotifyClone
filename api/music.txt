@@ -1,0 +1,11 @@
+{"success":true,"totalFiles":10,"message":"Successfully fetched 10 of 10 files","offset":0,"limit":100,"quran":[
+{"id": 1, "title": "One Night in Dubai", "file": "audios/music/1.mp3" },
+{"id": 2, "title": "Love me like you do", "file": "audios/music/2.mp3" },
+{"id": 3, "title": " Broken angel .. ", "file": "audios/music/3.mp3" },
+{"id": 4, "title": "Gulli mata ..", "file": "audios/music/4.mp3" },
+{"id": 5, "title": "Back in ocean ..", "file": "audios/music/5.mp3" },
+{"id": 6, "title": "Jani-Heroes Tonight ", "file": "audios/music/6.mp3" },
+{"id": 7, "title": "Chal git gaye (Sony)", "file": "audios/music/7.mp3" },
+{"id": 8, "title": "Tu maan meri jaan", "file": "audios/music/8.mp3" },
+{"id": 9, "title": "Better life .", "file": "audios/music/9.mp3" },
+{"id": 10, "title": "cielo .. ", "file": "audios/music/10.mp3" }]}

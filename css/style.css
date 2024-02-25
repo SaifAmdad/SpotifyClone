@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* Global ends here -------------------------------------------------------*/
+.hideTogleItem {
+  transform: scale(0);
+}
+/* header starts here ----------------------------------- */
+header {
+  position: sticky;
+  top: 0;
+}
+
+/* nav bar starts here ------------------------------- */
+nav {
+  background-color: black;
+  color: white;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+nav div ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 80px;
+}
+nav div ul li {
+  /* display: inline-block; */
+  margin-left: 20px;
+  float: left;
+  cursor: pointer;
+}
+nav div ul li img {
+  height: 60px;
+  cursor: pointer;
+}
+nav div ul li a {
+  text-decoration: none;
+  color: white;
+}
+/* nav bar ends here ------------------------ */
+
+/* togle icon starts here ------------------------------- */
+.toggle {
+  cursor: pointer;
+}
+#togle {
+  float: right;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+#togle .top {
+  height: 2px;
+  background-color: white;
+  width: 20px;
+  margin: 3px;
+}
+#togle .middle {
+  height: 2px;
+  background-color: white;
+  width: 20px;
+  margin: 3px;
+}
+#togle .bottom {
+  height: 2px;
+  background-color: white;
+  width: 20px;
+  margin: 3px;
+}
+.togleHide {
+  transform: scaleX(0);
+  transition: 1s;
+}
+.togleShow {
+  transform: scaleX(1);
+  transition: 1s;
+}
+
+/* togle icon ends --------------------------------------- */
+
+/* togle manue starts ---------------------------------------- */
+.togleItem {
+  float: right;
+  background-color: black;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  width: 170px;
+}
+.togleItem ul {
+  list-style: none;
+  color: white;
+}
+.togleItem ul li {
+  width: 100%;
+  box-shadow: 0px 2px 2px 2px gray;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.togleItem ul li span {
+  color: white;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.togleItem ul li span a {
+  text-decoration: none;
+  color: white;
+}
+.togleItem ul li img {
+  /* transform: scale(0); */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+  /* opacity: 0; */
+}
+.togleItem ul li:hover {
+  box-shadow: 0px 3px 4px 4px gray;
+  transform: scale(1.1);
+  transition: 1s;
+}
+/* togle manue ends -------------------------------------------- */
+
+/*  header ends here ------------------------------------------------- */
+.mainDefault {
+  background-image: url("/img/saif.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 100vh;
+}
+#welcome {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #00808066;
+  color: white;
+  transition: 3s;
+  padding: 10px 20px;
+  transform: translate(0, 60%);
+}
+
+.mainForQuran {
+  background-image: url("/img/quranbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.mainForIslamicSong {
+  background-image: url("/img/islamicbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.mainForMusic {
+  background-image: url("/img/musicbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* audio items ------------------------------------------ */
+
+.audioList {
+  background-color: #b8b7b742;
+  padding: 20px 10px;
+  width: 100%;
+  min-height: 100vh;
+}
+.audioItem {
+  background-color: #f5f2f2;
+  width: 80%;
+  height: 50px;
+  padding: 0 10px;
+  margin: 5px 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.themeName {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.audioName {
+  color: teal;
+  /* font-size: 25px; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.audioTheme {
+  height: 40px;
+  margin-right: 10px;
+}
+.audioTheme img {
+  height: 40px;
+  border: 3px solid grey;
+  border-radius: 50%;
+}
+
+.durationPlaypause {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.playPause {
+  height: 30px;
+  margin-left: 10px;
+}
+.playPause img {
+  height: 30px;
+  border: 3px solid grey;
+  border-radius: 50%;
+}
+/* audio ends here =================================== */
+
+/* Bottom audio controler starts =======================*/
+
+#bottom {
+  height: 130px;
+}
+footer {
+  height: 120px;
+  width: 100%;
+  background-color: teal;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  color: white;
+}
+#currentSongName {
+  text-align: center;
+  font-size: 16px;
+}
+#progress {
+  width: 90%;
+  margin: 0 auto;
+}
+#progress input {
+  width: 100%;
+}
+#footerContainer {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#playerControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#playerControl img {
+  background-color: white;
+  height: 50px;
+  padding: 10px;
+  width: 50px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+#playerControl img:hover {
+  box-shadow: 2px 3px 3px 2px rgb(27, 20, 20);
+}
+#volume {
+  width: 120px;
+}
+#volume input {
+  width: 100%;
+}
+
+/* bottom audio controler ends ============================ */
+
+/* Responsiv ------------------------------------- */
+
+/* medium screen ---------------------------------------- */
+
+@media screen and (min-width: 696px) {
+  #togle {
+    transform: scale(0);
+  }
+
+  .togleItem {
+    background-color: #ffffff00;
+    float: right;
+    position: fixed;
+    right: 0;
+    width: 190px;
+    transform: scale(1);
+  }
+  .togleItem ul {
+    list-style: none;
+    color: white;
+  }
+  .togleItem ul li {
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 25px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transform: translate(90px, 0);
+    transition: 1s;
+  }
+  .togleItem ul li span {
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+    transform: scale(0);
+  }
+  .togleItem ul li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid teal;
+  }
+  .togleItem ul li:hover {
+    background-color: #434242;
+    box-shadow: 0px 3px 4px 4px gray;
+    transform: scale(1.1);
+    transition: 1s;
+    span {
+      transform: scale(1);
+    }
+  }
+  .audioItem {
+    width: 80%;
+  }
+}
+
+/* big screen ------------------------------------------------------- */
+
+@media screen and (min-width: 996px) {
+  .audioItem {
+    width: 800px;
+  }
+  .togleItem {
+    width: 220px;
+  }
+  .togleItem ul li img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 7px solid teal;
+  }
+  .togleItem ul li {
+    height: 70px;
+  }
+}

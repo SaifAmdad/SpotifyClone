@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SpotifyClone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- axios cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <ul>
+            <li><img src="img/logo.png" alt="logo" srcset="" /></li>
+            <li><a href="#">Home</a></li>
+            <li>about</li>
+          </ul>
+
+          <div id="togle">
+            <div class="toggle">
+              <div class="top"></div>
+              <div class="middle"></div>
+              <div class="bottom"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main id="viewport" class="mainDefault">
+      <div class="togleHide togleItem">
+        <ul>
+          <li id="quran" class="toggleItem">
+            <img src="img/quran.png" alt="" /><span>Quran</span>
+          </li>
+          <li id="islamicSong" class="toggleItem">
+            <img src="img/islamic.png" alt="" /><span>Islamic Song</span>
+          </li>
+          <li id="music" class="toggleItem">
+            <img src="img/music.jpg" alt="" /><span>Music</span>
+          </li>
+        </ul>
+      </div>
+      <div class="container">
+        <!-- audio iems starts here ------------------------ -->
+        <div class="audioList">
+          <!-- <div class="audioItem">
+            <span class="themeName">
+              <span class="audioTheme"
+                ><img src="img/music.jpg" alt="" />
+              </span>
+              <span class="audioName">Sutrah al fatihah (the poekjfaks)</span>
+            </span>
+            <span class="durationPlaypause">
+              <span class="duration">5:00</span>
+              <span class="playPause">
+                <img src="img/icons/circle-pause-regular.svg" alt="" />
+              </span>
+            </span>
+          </div> -->
+        </div>
+        <div id="bottom"></div>
+        <!-- audio ends here ------------- -->
+      </div>
+    </main>
+
+    <!-- footer starts here ------------------------------------------------- -->
+    <!-- <footer>
+      <p id="currentSongName">--</p>
+      <div id="progress">
+        <input type="range" min="0" max="100" value="0" id="progressbar" />
+      </div>
+      <div class="container" id="footerContainer">
+        <div>
+          <input type="checkbox" name="continue" id="continue" />
+          Continue
+        </div>
+        <div id="playerControl">
+          <span id="backward">
+            <img src="img/icons/backward-step-solid.svg" alt="" />
+          </span>
+          <span id="mainPlayPause"
+            ><img src="img/icons/circle-play-regular.svg" alt=""
+          /></span>
+          <span id="forward">
+            <img src="img/icons/forward-step-solid.svg" alt="" />
+          </span>
+        </div>
+        <div id="volume">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="30"
+            id="volumeProgress"
+          />
+        </div>
+      </div>
+    </footer> -->
+    <footer></footer>
+    <!-- Js file linked here -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

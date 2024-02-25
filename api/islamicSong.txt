@@ -1,0 +1,10 @@
+{"success":true,"totalFiles":9,"message":"Successfully fetched 9 of 9 files","offset":0,"limit":100,"quran":[
+{"id": 1, "title": "Allah Allah bolo (Kalarab) ", "file": "audios/islamicSong/001.mp3" },
+{"id": 2, "title": "Allahu Allahu (Munaeem Billah)", "file": "audios/islamicSong/002.mp3" },
+{"id": 3, "title": " Bhedabed || ভেদাবেদ (Munaeem Billah) ", "file": "audios/islamicSong/003.mp3" },
+{"id": 4, "title": "Motobed || মতোবেদ (Munaeem Billah)", "file": "audios/islamicSong/004.mp3" },
+{"id": 5, "title": "Mumin Rhidoye Chand ..", "file": "audios/islamicSong/005.mp3" },
+{"id": 6, "title": "Kabhi ay NawJawan Muslim", "file": "audios/islamicSong/006.mp3" },
+{"id": 7, "title": "Uqabi ShanSe .. (Allama Iqbal)", "file": "audios/islamicSong/007.mp3" },
+{"id": 8, "title": " Rhidoy Maje tumi", "file": "audios/islamicSong/008.mp3" },
+{"id": 9, "title": " LabPe Aateehe dua (Allama Iqbal) ", "file": "audios/islamicSong/009.mp3" }]}
