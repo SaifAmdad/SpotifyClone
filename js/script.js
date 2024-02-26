@@ -22,11 +22,11 @@ let audioList = document.querySelector(".audioList");
 // -------------------------------------------------------
 
 // icons here-----------
-let playIcon = `/img/icons/circle-play-regular.svg`;
-let pauseIcon = `/img/icons/circle-pause-regular.svg`;
-let quranTheme = `/img/quran.png`;
-let islamicSongTheme = `/img/islamic.png`;
-let musicTheme = `/img/music.jpg`;
+let playIcon = `../img/icons/circle-play-regular.svg`;
+let pauseIcon = `../img/icons/circle-pause-regular.svg`;
+let quranTheme = `../img/quran.png`;
+let islamicSongTheme = `../img/islamic.png`;
+let musicTheme = `../img/music.jpg`;
 // finding HTML elements ends =========================
 
 // calling local api==================
@@ -256,13 +256,13 @@ const createFooter = () => {
     </div>
     <div id="playerControl">
       <span id="backward">
-        <img src="img/icons/backward-step-solid.svg" alt="" />
+        <img src="../img/icons/backward-step-solid.svg" alt="" />
       </span>
       <span id="mainPlayPause"
-        ><img src="img/icons/circle-play-regular.svg" alt=""
+        ><img src="../img/icons/circle-play-regular.svg" alt=""
       /></span>
       <span id="forward">
-        <img src="img/icons/forward-step-solid.svg" alt="" />
+        <img src="../img/icons/forward-step-solid.svg" alt="" />
       </span>
     </div>
     <div id="volume">
@@ -293,13 +293,13 @@ const createNewFooter = () => {
     </div>
     <div id="playerControl">
       <span id="backward">
-        <img src="img/icons/backward-step-solid.svg" alt="" />
+        <img src="../img/icons/backward-step-solid.svg" alt="" />
       </span>
       <span id="mainPlayPause"
-        ><img src="img/icons/circle-play-regular.svg" alt=""
+        ><img src="../img/icons/circle-play-regular.svg" alt=""
       /></span>
       <span id="forward">
-        <img src="img/icons/forward-step-solid.svg" alt="" />
+        <img src="../img/icons/forward-step-solid.svg" alt="" />
       </span>
     </div>
     <div id="volume">
