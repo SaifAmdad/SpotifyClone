@@ -350,7 +350,7 @@ setTimeout(() => {
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     createFooter();
-    makeRequest("/api/quran.txt", quranTheme);
+    makeRequest("https://saifamdad.github.io/apis/spotifyCloneApi/quran.json", quranTheme);
     viewPort.classList.remove("mainDefault");
     viewPort.classList.add("mainForQuran");
   }, 3000);
@@ -361,7 +361,7 @@ quran.addEventListener("click", () => {
   let footer = document.querySelector("footer");
   footer.remove();
   createNewFooter();
-  audioList.replaceChildren(makeRequest("/api/quran.txt", quranTheme));
+  audioList.replaceChildren(makeRequest("https://saifamdad.github.io/apis/spotifyCloneApi/quran.json", quranTheme));
   viewPort.classList.remove("mainForMusic");
   viewPort.classList.remove("mainDefault");
   viewPort.classList.remove("mainForIslamicSong");
@@ -373,7 +373,7 @@ islamicSong.addEventListener("click", () => {
   footer.remove();
   createNewFooter();
   audioList.replaceChildren(
-    makeRequest("/api/islamicSong.txt", islamicSongTheme)
+    makeRequest("https://saifamdad.github.io/apis/spotifyCloneApi/islamicSong.json", islamicSongTheme)
   );
   viewPort.classList.remove("mainForQuran");
   viewPort.classList.remove("mainForMusic");
@@ -383,7 +383,7 @@ music.addEventListener("click", () => {
   let footer = document.querySelector("footer");
   footer.remove();
   createNewFooter();
-  audioList.replaceChildren(makeRequest("/api/music.txt", musicTheme));
+  audioList.replaceChildren(makeRequest("https://saifamdad.github.io/apis/spotifyCloneApi/music.json", musicTheme));
   viewPort.classList.remove("mainForQuran");
   viewPort.classList.remove("mainForIslamicSong");
   viewPort.classList.add("mainForMusic");
