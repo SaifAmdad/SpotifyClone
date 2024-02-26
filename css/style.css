@@ -138,7 +138,7 @@ nav div ul li a {
 
 /*  header ends here ------------------------------------------------- */
 .mainDefault {
-  background-image: url("/img/saif.png");
+  background-image: url("../img/saif.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -157,7 +157,7 @@ nav div ul li a {
 }
 
 .mainForQuran {
-  background-image: url("/img/quranbg.jpg");
+  background-image: url("../img/quranbg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -165,7 +165,7 @@ nav div ul li a {
 }
 
 .mainForIslamicSong {
-  background-image: url("/img/islamicbg.jpg");
+  background-image: url("../img/islamicbg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -173,7 +173,7 @@ nav div ul li a {
 }
 
 .mainForMusic {
-  background-image: url("/img/musicbg.jpg");
+  background-image: url("../img/musicbg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
