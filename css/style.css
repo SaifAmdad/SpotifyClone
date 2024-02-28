@@ -236,6 +236,7 @@ nav div ul li a {
   height: 30px;
   border: 3px solid grey;
   border-radius: 50%;
+  cursor: pointer;
 }
 /* audio ends here =================================== */
 
@@ -263,6 +264,7 @@ footer {
 }
 #progress input {
   width: 100%;
+  cursor: pointer;
 }
 #footerContainer {
   width: 90%;
@@ -282,6 +284,7 @@ footer {
   width: 50px;
   margin: 0 5px;
   border-radius: 5px;
+  cursor: pointer;
 }
 #playerControl img:hover {
   box-shadow: 2px 3px 3px 2px rgb(27, 20, 20);
@@ -291,6 +294,7 @@ footer {
 }
 #volume input {
   width: 100%;
+  cursor: pointer;
 }
 
 /* bottom audio controler ends ============================ */
