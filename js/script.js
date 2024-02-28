@@ -215,6 +215,7 @@ const makeRequest = async (url, thems) => {
           nextPlay();
         } else {
           mainPlayPause.innerHTML = `<img src="${playIcon}" alt="Play" />`;
+          showToggle()
         }
         progressbar.value = 0;
       }
