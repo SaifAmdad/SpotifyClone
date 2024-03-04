@@ -349,10 +349,11 @@ footer {
     box-shadow: 0px 3px 4px 4px gray;
     transform: scale(1.1);
     transition: 1s;
-    span {
+  }
+  .togleItem ul li span:hover{
       transform: scale(1);
     }
-  }
+
   .audioItem {
     width: 80%;
   }
