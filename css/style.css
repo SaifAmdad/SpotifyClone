@@ -183,7 +183,7 @@ nav div ul li a {
 /* audio items ------------------------------------------ */
 
 .audioList {
-  background-color: #b8b7b742;
+/*   background-color: #b8b7b742; */
   padding: 20px 10px;
   width: 100%;
   min-height: 100vh;
